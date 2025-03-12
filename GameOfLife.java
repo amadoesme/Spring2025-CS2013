@@ -8,32 +8,16 @@
  *    'A' to add a live cell
  *    'N' to display neighbor counts for each cell
  *    'Q' to end game
- *
- *  TO DO:
- *         I removed much of the implementation; look for
- *         "TO DO" throughout the code.
- *
- *        Also, you may want to add other interactions, for example:
- *        - removing (or killing) a cell
- *        - toggling a cell (change its state)
- *        - adding a bunch of live cells at random locations in one step
- *
- *        Other ideas:
- *        - Change the program so that the user can enter the size of the
- *          grid and the initial density of live cells, either through
- *          console input or as commandline args.
- *        - Display the number of live cells and the number of evolutions.
- *
  */
 
 /** Names: Esmeralda Amado
     Course: CS2013
     Section: 03 & 04
-    Description: We learned what John Conways game of life was.
+    Description: learned what John Conways game of life was.
     If a cell has more than 3 neighbors it dies because it is overcrowded.
     If it has less than 3 it does because of lonlyness. If it has 3 neighbors
     the cell gets to live. The cells regenerate and create shapes and patterns.
-    Other comments: We still need to do the bonus part of the prompt on canvas.
+    Other comments: still need to do the bonus part of the prompt on canvas.
 */
 
 
@@ -132,12 +116,12 @@ public class GameOfLife {
   /*
      Makes the cell at specified location alive.
 
-     TO DO: Currently the user can turn border cells alive,
-            or crash the game by specifying location outside
-            the grid. Modify this method to prevent either of
-            these from happening; if row or col are either
-            border or outside the grid display a message letting
-            the user know that the location is out of bounds.
+     Currently the user can turn border cells alive,
+     or crash the game by specifying location outside
+     the grid. Made this method to prevent either of
+     these from happening; if row or col are either
+     border or outside the grid display a message letting
+     the user know that the location is out of bounds.
   */
 
   public static void addCell(boolean[][] grid, int row, int col) {
@@ -160,8 +144,8 @@ public class GameOfLife {
 
      Thus the number returned must be in [0, 8]
 
-     TO DO: Right now it just returns 0 for each cell, making all the
-            cells die out. Prevent this cell massacre!!!!
+     Right now it just returns 0 for each cell, making all the
+     cells die out. Prevent this cell massacre!!!!
   */
   public static int countNeighbors(boolean[][] grid, int row, int col) {
     int num = 0;

@@ -1,4 +1,4 @@
-/** Names: Esmeralda Amado, Carlos Silva
+/** Names: Esmeralda Amado
  Course: CS2013
  Section: 03 & 04
  Description: This program demonstrates the use of recursion and backtracking
@@ -34,22 +34,10 @@ public class SymbolGrid {
 		//hint make a for loop, first char in sequence add in path and start
 		// finding paths, use helper method
 
-		// TO DO:
-		//     Add code to traverse the grid and search for paths
-		//     starting at each cell using the findPathsAt() method.
-		//
-		//
-
 		System.out.println("\n--- finished searching");
 	}
-
-	// TO DO:
-	//     Implement recursive method with backtracking
-	//
-	// NOTE:
-	//   You may change the list of parameters here, but before you do
-	//   check out all the helpful helper methods in Grid, Cell and Path
-	//   below.
+	
+	//implementing recursive method with backtracking
 
 	//checking all the valid paths
 	private static void findPathsAt(Grid grid,
@@ -108,17 +96,9 @@ public class SymbolGrid {
 	}
 
 	public static void main(String[] args) {
-		// NOTE:
-		//   You may modify this to let the user choose grid size.
 		Grid grid = new Grid(7, SYMBOLS);
 		grid.display();
-
 		System.out.println();
-
-		// NOTE:
-		//   You may modify this to let the use choose length of
-		//   the sequence and/or to enter the sequence they want
-		//   the program to find.
 		char[] seq = randomSymbolSequence(4);
 		System.out.print("sequence: ");
 		System.out.println(seq);
@@ -128,7 +108,7 @@ public class SymbolGrid {
 
 	}
 
-	/* Helper methods below -- you shouldn't need to alter them but you can add your own. */
+	/* Helper methods below */
 
 	private static char[] randomSymbolSequence(int length) {
 		char[] sequence = new char[length];

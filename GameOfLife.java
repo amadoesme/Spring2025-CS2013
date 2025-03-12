@@ -26,7 +26,7 @@
  *
  */
 
-/** Names: Esmeralda Amado, Justin Gip
+/** Names: Esmeralda Amado
     Course: CS2013
     Section: 03 & 04
     Description: We learned what John Conways game of life was.
